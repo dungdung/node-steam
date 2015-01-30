@@ -135,7 +135,7 @@ function emitClassEncoder(cnode, baseSize) {
         var bb = this[prop.name].encode();
         
         if (prop.flagsOpt != null) {
-          this[prop.flagsOpt] = bb.limit - bb.offset;
+          this[prop.flagsOpt] = bb.limit;
         }
         
         varLengthProps.push(bb);
@@ -143,7 +143,7 @@ function emitClassEncoder(cnode, baseSize) {
     }.bind(this));
     
     var bb = new ByteBuffer(baseSize + varLengthProps.reduce(function(capacity, bb) {
-      return capacity + bb.limit - bb.offset;
+      return capacity + bb.limit;
     }, 0), ByteBuffer.LITTLE_ENDIAN);
     
     // next emit writers

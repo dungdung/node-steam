@@ -15,8 +15,8 @@
     "adm-zip": "*",
     "buffer-crc32": "*",
     "bytebuffer": "*",
+    "long": "*",
     "protobufjs": "*",
-    "ref": "*",
     "ursa": "*"
   },
   "engines": {
