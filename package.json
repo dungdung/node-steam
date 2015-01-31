@@ -16,8 +16,7 @@
     "buffer-crc32": "*",
     "bytebuffer": "*",
     "long": "*",
-    "protobufjs": "*",
-    "ursa": "*"
+    "protobufjs": "*"
   },
   "engines": {
     "node": "0.10.x"
