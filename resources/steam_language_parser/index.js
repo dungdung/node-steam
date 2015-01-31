@@ -1,5 +1,5 @@
 var fs = require('fs');
-var token_analyzer = require(__dirname + '/parser/token_analyzer');
+var token_analyzer = require('./parser/token_analyzer');
 
 var codeGen = require('./generator/node_gen');
 var languagePath = require('path').join(__dirname, '../steam_language');
